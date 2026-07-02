@@ -1,119 +1,631 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    body {background-color: #faf0e1}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 18.0px 'Helvetica Neue'; color: #ce776b; -webkit-text-stroke: #ce776b}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26; background-color: #f2bbb3}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26; background-color: #f4d878}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #ce776b; -webkit-text-stroke: #ce776b}
-    p.p13 {margin: 0.0px 0.0px 17.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p14 {margin: 0.0px 0.0px 15.6px 0.0px; font: 15.6px 'Helvetica Neue'; color: #ce776b; -webkit-text-stroke: #ce776b}
-    p.p16 {margin: 0.0px 0.0px 17.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26; background-color: #ffffff}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px '.Apple Color Emoji UI'; color: #392d26; -webkit-text-stroke: #392d26}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #faf0e1; -webkit-text-stroke: #faf0e1; background-color: #392d26}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #faf0e1; -webkit-text-stroke: #faf0e1}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #ce776b; -webkit-text-stroke: #ce776b}
-    p.p21 {margin: 0.0px 0.0px 17.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #faf0e1; -webkit-text-stroke: #faf0e1}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #faf0e1; -webkit-text-stroke: #faf0e1}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #faf0e1; -webkit-text-stroke: #faf0e1}
-    span.s1 {font: 18.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #faf0e1}
-    span.s2 {font-kerning: none; background-color: #faf0e1}
-    span.s3 {font-kerning: none; background-color: #a9d1a1}
-    span.s4 {font-kerning: none; background-color: #bda7e2}
-    span.s5 {font-kerning: none}
-    span.s6 {font-kerning: none; background-color: #f4d878}
-    span.s7 {font-kerning: none; background-color: #ffffff}
-    span.s8 {font-kerning: none; background-color: #f2bbb3}
-    span.s9 {font-kerning: none; background-color: #abd4e5}
-    span.s10 {font: 18.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #392d26}
-    span.s11 {font-kerning: none; background-color: #392d26}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LegalLead — Law, translated.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Quicksand:wght@500;600;700&family=Karla:wght@400;500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+
+/* ============================================================
+   EDIT ME: COLORS
+   Change any hex code here and it updates the whole site.
+   ============================================================ */
+:root{
+  --lavender:#C9B8E8;
+  --lavender-dark:#8F79C4;
+  --blush:#F6C8C0;
+  --blush-dark:#D98C7E;
+  --cream:#FBF3E7;
+  --lightblue:#B8DCEA;
+  --lightblue-dark:#5F9CB4;
+  --yellow:#F7DE8A;
+  --yellow-dark:#C79A2C;
+  --green:#B7D8B0;
+  --green-dark:#5E8A55;
+  --gold:#D9A441;
+  --ink:#4A3B32;
+  --white:#FFFFFF;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Karla', sans-serif;
+  font-size:17px;
+  line-height:1.6;
+}
+h1,h2,h3{
+  font-family:'Fraunces', serif;
+  font-weight:600;
+  margin:0 0 .4em;
+  color:var(--ink);
+}
+h1{font-size:2.6rem;}
+h2{font-size:1.9rem;}
+h3{font-size:1.3rem;}
+p{margin:0 0 1em;}
+a{color:inherit;}
+.handwrite{font-family:'Caveat', cursive; font-weight:700;}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+img{max-width:100%;}
+
+.sticker{position:absolute; z-index:2;}
+.wobble{transform:rotate(-6deg);}
+.wobble2{transform:rotate(5deg);}
+.wobble3{transform:rotate(-3deg);}
+
+.topbar{
+  position:sticky; top:0; z-index:50;
+  background:var(--cream);
+  border-bottom:3px dashed var(--gold);
+}
+.topbar-inner{
+  max-width:1080px; margin:0 auto; padding:14px 24px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  flex-wrap:wrap;
+}
+.logo{
+  font-family:'Fraunces', serif; font-weight:700; font-size:1.5rem;
+  display:flex; align-items:center; gap:8px; cursor:pointer;
+  background:none; border:none; color:var(--ink);
+}
+.logo .dot{color:var(--blush-dark);}
+nav.tabs{
+  display:flex; gap:6px; flex-wrap:wrap; justify-content:center;
+}
+nav.tabs button{
+  font-family:'Quicksand', sans-serif; font-weight:600; font-size:.92rem;
+  background:transparent; border:2px solid transparent; color:var(--ink);
+  padding:8px 16px; border-radius:999px; cursor:pointer;
+  transition:background .15s ease, border-color .15s ease, transform .1s ease;
+}
+nav.tabs button:hover{background:var(--lavender); transform:translateY(-1px);}
+nav.tabs button.active{background:var(--blush); border-color:var(--gold);}
+
+.btn{
+  display:inline-block; font-family:'Quicksand', sans-serif; font-weight:700;
+  font-size:1rem; padding:12px 26px; border-radius:999px; text-decoration:none;
+  border:2px solid var(--ink); cursor:pointer; transition:transform .12s ease;
+}
+.btn:hover{transform:translateY(-2px) rotate(-1deg);}
+.btn-primary{background:var(--blush); color:var(--ink);}
+.btn-secondary{background:transparent; color:var(--ink); border:2px solid var(--lavender-dark);}
+.btn-dark{background:var(--ink); color:var(--cream); border-color:var(--ink);}
+.btn-row{display:flex; gap:14px; flex-wrap:wrap; margin-top:22px;}
+
+.page{display:none; animation:fadeIn .25s ease;}
+.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+
+section{padding:64px 0;}
+.section-alt{background:var(--lightblue);}
+.section-alt2{background:var(--yellow);}
+.section-alt3{background:var(--green);}
+.section-alt4{background:var(--lavender);}
+
+.eyebrow{
+  font-family:'Quicksand', sans-serif; font-weight:700; font-size:.85rem;
+  text-transform:uppercase; letter-spacing:.08em; color:var(--blush-dark);
+  margin-bottom:8px; display:block;
+}
+
+.card{
+  background:var(--white); border:2px solid var(--ink); border-radius:22px;
+  padding:26px; position:relative;
+}
+.grid{display:grid; gap:22px;}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+@media (max-width:760px){ .grid-3, .grid-2{grid-template-columns:1fr;} }
+
+.sticky-note{
+  background:var(--yellow); border:1px solid var(--gold); border-radius:4px;
+  padding:16px 18px; max-width:280px; transform:rotate(-3deg);
+  font-family:'Caveat', cursive; font-weight:700; font-size:1.25rem; line-height:1.3;
+}
+
+.badge{
+  display:inline-flex; align-items:center; gap:6px;
+  background:var(--green); border:2px solid var(--green-dark); border-radius:999px;
+  padding:6px 16px; font-family:'Quicksand',sans-serif; font-weight:700; font-size:.85rem;
+}
+
+/* ---------- home hero ---------- */
+.hero{
+  background:var(--lavender); position:relative; overflow:hidden;
+  padding:80px 0 90px;
+}
+.hero-inner{
+  display:flex; align-items:center; gap:40px; flex-wrap:wrap; position:relative; z-index:3;
+}
+.hero-text{flex:1; min-width:300px;}
+.hero-art{flex:1; min-width:280px; display:flex; justify-content:center;}
+
+footer{
+  background:var(--ink); color:var(--cream); padding:44px 0 28px; margin-top:0;
+}
+footer a{text-decoration:none;}
+.footer-grid{display:flex; justify-content:space-between; gap:32px; flex-wrap:wrap;}
+.footer-links{display:flex; gap:40px; flex-wrap:wrap;}
+.footer-links h4{font-family:'Quicksand',sans-serif; font-size:.9rem; letter-spacing:.05em; text-transform:uppercase; margin-bottom:10px; color:var(--yellow);}
+.footer-links a{display:block; margin-bottom:6px; color:var(--cream); opacity:.85; font-size:.95rem;}
+.footer-links a:hover{opacity:1; text-decoration:underline;}
+.footer-bottom{margin-top:34px; padding-top:18px; border-top:1px solid rgba(255,255,255,.2); font-size:.85rem; opacity:.7;}
+
+.role-card{text-align:center;}
+.role-card .emoji-ish{font-size:2rem; margin-bottom:10px;}
+.chapter-card{border-radius:22px; border:2px solid var(--ink); background:var(--white); padding:22px; position:relative;}
+.chapter-card .pin{position:absolute; top:-10px; left:20px; background:var(--blush); border:2px solid var(--ink); border-radius:50%; width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-size:.8rem;}
+.event-ticket{
+  background:var(--white); border:2px dashed var(--ink); border-radius:16px; padding:20px;
+  position:relative;
+}
+.resource-folder{
+  background:var(--white); border:2px solid var(--ink); border-radius:18px 18px 6px 6px; padding:22px;
+  position:relative;
+}
+.resource-folder::before{
+  content:""; position:absolute; top:-10px; left:16px; width:60px; height:14px;
+  background:var(--white); border:2px solid var(--ink); border-bottom:none; border-radius:8px 8px 0 0;
+}
+form.contact-form{display:flex; flex-direction:column; gap:14px; max-width:520px;}
+form.contact-form input, form.contact-form select, form.contact-form textarea{
+  font-family:'Karla', sans-serif; font-size:1rem; padding:12px 14px;
+  border-radius:14px; border:2px solid var(--ink); background:var(--white); color:var(--ink);
+  width:100%;
+}
+form.contact-form label{font-family:'Quicksand',sans-serif; font-weight:700; font-size:.9rem;}
+form.contact-form textarea{min-height:120px; resize:vertical; font-family:'Karla', sans-serif;}
+
+.timeline{border-left:3px dashed var(--gold); margin-left:14px; padding-left:26px;}
+.timeline .tl-item{position:relative; margin-bottom:30px;}
+.timeline .tl-item::before{
+  content:"\2605"; position:absolute; left:-38px; top:0; color:var(--gold); font-size:1.1rem;
+}
+
+@media (max-width:700px){
+  h1{font-size:2rem;}
+  h2{font-size:1.5rem;}
+  .footer-grid{flex-direction:column;}
+}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">⚖️</span><span class="s2"> LegalLead</span></p>
-<p class="p2"><span class="s2">.</span></p>
-<p class="p3"><span class="s2">Home</span></p>
-<p class="p3"><span class="s2">About</span></p>
-<p class="p3"><span class="s2">Chapters</span></p>
-<p class="p3"><span class="s2">Events</span></p>
-<p class="p3"><span class="s2">Resources</span></p>
-<p class="p3"><span class="s2">Apply</span></p>
-<p class="p3"><span class="s2">Partner</span></p>
-<p class="p3"><span class="s2">Contact</span></p>
-<p class="p4"><span class="s3">Run by students. Backed by real lawyers.</span></p>
-<h1 style="margin: 0.0px 0.0px 12.5px 0.0px; font: 31.2px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s4">Law, translated.</span></h1>
-<p class="p6"><span class="s5">LegalLead is a youth-led nonprofit making legal knowledge easier to understand — through workshops, community events, and resources built by young people, for young people.</span></p>
-<p class="p7"><span class="s5">Find Your Chapter</span></p>
-<p class="p8"><span class="s4">See What We Do</span></p>
-<p class="p9"><span class="s6">"We're not lawyers.</span></p>
-<p class="p10"><span class="s5">We're translators."</span></p>
-<p class="p11"><span class="s5">WHY WE EXIST</span></p>
-<h2 style="margin: 0.0px 0.0px 9.1px 0.0px; font: 22.8px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s5">Nobody taught us this stuff — so we're teaching it now.</span></h2>
-<p class="p13"><span class="s5">Most of us didn't learn how contracts work, what our rights are during a traffic stop, or how to read a lease, until we had to figure it out the hard way. So we built the resource we wished we had: a national network of student-run chapters teaching legal literacy one workshop, podcast episode, and community booth at a time.</span></p>
-<p class="p14"><span class="s5">— the LegalLead founding team</span></p>
-<p class="p11"><span class="s4">WHAT WE DO</span></p>
-<h2 style="margin: 0.0px 0.0px 9.1px 0.0px; font: 22.8px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s4">Six ways we make the law make sense</span></h2>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Workshops</span></h3>
-<p class="p16"><span class="s5">Local, in-person lessons that break down real legal topics — tenant rights, first jobs, ID stops — in plain language.</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Booklets &amp; Infographics</span></h3>
-<p class="p13"><span class="s7">Bite-sized guides you can actually finish reading — no jargon, no fine print.</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Community Booths</span></h3>
-<p class="p13"><span class="s7">We show up at fairs, libraries, and school events — wherever people already are.</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Explainer PDFs</span></h3>
-<p class="p13"><span class="s7">Free, downloadable, no legal degree required.</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Chapter Network</span></h3>
-<p class="p13"><span class="s7">Student leaders bringing LegalLead to their own cities and campuses.</span></p>
-<p class="p11"><span class="s5">CHAPTERS</span></p>
-<h2 style="margin: 0.0px 0.0px 9.1px 0.0px; font: 22.8px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s5">A national network, led locally</span></h2>
-<p class="p13"><span class="s5">LegalLead chapters are run by state heads and local student leaders who know their communities best. We're growing city by city.</span></p>
-<p class="p17"><span class="s8">📍</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Austin, TX</span></h3>
-<p class="p13"><span class="s7">Weekly workshops with two local high schools.</span></p>
-<p class="p17"><span class="s8">📍</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Columbus, OH</span></h3>
-<p class="p13"><span class="s7">Runs the "Know Your Rights" library series.</span></p>
-<p class="p17"><span class="s8">📍</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">San Jose, CA</span></h3>
-<p class="p13"><span class="s7">Hosts our biggest community booth of the year.</span></p>
-<p class="p18"><span class="s5">See All Chapters</span></p>
-<p class="p11"><span class="s9">HAPPENING SOON</span></p>
-<h2 style="margin: 0.0px 0.0px 9.1px 0.0px; font: 22.8px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s9">Upcoming events</span></h2>
-<p class="p4"><span class="s3">Jul 12</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Renters 101 Workshop</span></h3>
-<p class="p16"><span class="s5">Austin Public Library — open to all ages 14+.</span></p>
-<p class="p4"><span class="s3">Aug 2</span></p>
-<h3 style="margin: 0.0px 0.0px 6.2px 0.0px; font: 15.6px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s7">Community Booth</span></h3>
-<p class="p13"><span class="s7">San Jose Summer Fair — free booklets &amp; stickers.</span></p>
-<p class="p18"><span class="s5">View All Events</span></p>
-<p class="p11"><span class="s3">GET INVOLVED</span></p>
-<h2 style="margin: 0.0px 0.0px 9.1px 0.0px; font: 22.8px 'Helvetica Neue'; color: #392d26; -webkit-text-stroke: #392d26"><span class="s3">There's a place for you here</span></h2>
-<p class="p13"><span class="s3">Join as a teacher, designer, tech volunteer, business lead, or social media voice — or just support the mission. We're a small team doing big things, and we could use your hands.</span></p>
-<p class="p7"><span class="s5">Apply to Join</span></p>
-<p class="p8"><span class="s3">Partner With Us</span></p>
-<p class="p19"><span class="s10">⚖️</span><span class="s11"> LegalLead</span></p>
-<p class="p20"><span class="s11">.</span></p>
-<p class="p21"><span class="s11">Law, translated. A youth-led nonprofit for legal literacy and community empowerment.</span></p>
-<h4 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #f4d878; -webkit-text-stroke: #f4d878"><span class="s11">EXPLORE</span></h4>
-<p class="p23"><span class="s11">About</span></p>
-<p class="p23"><span class="s11">Chapters</span></p>
-<p class="p23"><span class="s11">Events</span></p>
-<p class="p23"><span class="s11">Resources</span></p>
-<h4 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #f4d878; -webkit-text-stroke: #f4d878"><span class="s11">GET INVOLVED</span></h4>
-<p class="p23"><span class="s11">Apply</span></p>
-<p class="p23"><span class="s11">Partner With Us</span></p>
-<p class="p23"><span class="s11">Contact</span></p>
-<p class="p24"><span class="s11">© LegalLead. Made with care by a youth-led team.</span></p>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <button class="logo" data-goto="home">&#9878;&#65039; LegalLead<span class="dot">.</span></button>
+    <nav class="tabs" id="navtabs">
+      <button data-goto="home">Home</button>
+      <button data-goto="about">About</button>
+      <button data-goto="chapters">Chapters</button>
+      <button data-goto="events">Events</button>
+      <button data-goto="resources">Resources</button>
+      <button data-goto="apply">Apply</button>
+      <button data-goto="partner">Partner</button>
+      <button data-goto="contact">Contact</button>
+    </nav>
+  </div>
+</div>
+
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <span class="badge">Run by students. Backed by real lawyers.</span>
+        <h1 style="margin-top:14px;">Law, translated.</h1>
+        <p style="font-size:1.15rem; max-width:480px;">LegalLead is a youth-led nonprofit making legal knowledge easier to understand — through workshops, community events, and resources built by young people, for young people.</p>
+        <div class="btn-row">
+          <button class="btn btn-primary" data-goto="chapters">Find Your Chapter</button>
+          <button class="btn btn-secondary" data-goto="about">See What We Do</button>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="sticky-note wobble">"We're not lawyers.<br>We're translators."</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Why we exist</span>
+      <h2>Nobody taught us this stuff — so we're teaching it now.</h2>
+      <p>Most of us didn't learn how contracts work, what our rights are during a traffic stop, or how to read a lease, until we had to figure it out the hard way. So we built the resource we wished we had: a national network of student-run chapters teaching legal literacy one workshop, and community booth at a time.</p>
+      <p class="handwrite" style="font-size:1.3rem; color:var(--blush-dark);">— the LegalLead founding team</p>
+    </div>
+  </section>
+
+  <section class="section-alt4">
+    <div class="wrap">
+      <span class="eyebrow">What we do</span>
+      <h2>Six ways we make the law make sense</h2>
+      <div class="grid grid-3" style="margin-top:28px;">
+        <div class="card">
+          <h3>Workshops</h3>
+          <p>Local, in-person lessons that break down real legal topics — tenant rights, first jobs, ID stops — in plain language.</p>
+        </div>
+        <div class="card">
+          <h3>Booklets & Infographics</h3>
+          <p>Bite-sized guides you can actually finish reading — no jargon, no fine print.</p>
+        </div>
+        <div class="card">
+          <h3>Community Booths</h3>
+          <p>We show up at fairs, libraries, and school events — wherever people already are.</p>
+        </div>
+        <div class="card">
+          <h3>Explainer PDFs</h3>
+          <p>Free, downloadable, no legal degree required.</p>
+        </div>
+        <div class="card">
+          <h3>Chapter Network</h3>
+          <p>Student leaders bringing LegalLead to their own cities and campuses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Chapters</span>
+      <h2>A national network, led locally</h2>
+      <p style="max-width:600px;">LegalLead chapters are run by state heads and local student leaders who know their communities best. We're growing city by city.</p>
+      <div class="grid grid-3" style="margin-top:24px;">
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>Austin, TX</h3><p>Weekly workshops with two local high schools.</p></div>
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>Columbus, OH</h3><p>Runs the "Know Your Rights" library series.</p></div>
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>San Jose, CA</h3><p>Hosts our biggest community booth of the year.</p></div>
+      </div>
+      <div class="btn-row"><button class="btn btn-dark" data-goto="chapters">See All Chapters</button></div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <span class="eyebrow">Happening soon</span>
+      <h2>Upcoming events</h2>
+      <div class="grid grid-3" style="margin-top:24px;">
+        <div class="event-ticket"><span class="badge">Jul 12</span><h3>Renters 101 Workshop</h3><p>Austin Public Library — open to all ages 14+.</p></div>
+        <div class="event-ticket"><span class="badge">Aug 2</span><h3>Community Booth</h3><p>San Jose Summer Fair — free booklets & stickers.</p></div>
+      </div>
+      <div class="btn-row"><button class="btn btn-dark" data-goto="events">View All Events</button></div>
+    </div>
+  </section>
+
+  <section class="section-alt3">
+    <div class="wrap">
+      <span class="eyebrow">Get involved</span>
+      <h2>There's a place for you here</h2>
+      <p style="max-width:600px;">Join as a teacher, designer, tech volunteer, business lead, or social media voice — or just support the mission. We're a small team doing big things, and we could use your hands.</p>
+      <div class="btn-row">
+        <button class="btn btn-primary" data-goto="apply">Apply to Join</button>
+        <button class="btn btn-secondary" data-goto="partner">Partner With Us</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-about">
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">About LegalLead</span>
+      <h1>Our story, in short</h1>
+      <p>LegalLead started with one workshop at a local library, taught by a handful of students who were tired of watching their friends get blindsided by leases, contracts, and traffic stops they didn't understand. </p>
+      <p>We're still students. We're still figuring some of this out as we go. But we've learned that legal knowledge doesn't have to be locked behind a law degree — it just has to be explained well.</p>
+    </div>
+  </section>
+
+  <section class="section-alt4">
+    <div class="wrap">
+      <h2>What we believe</h2>
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card"><h3>Access over jargon</h3><p>If a resource needs a dictionary to understand, we haven't done our job.</p></div>
+        <div class="card"><h3>Community over classroom</h3><p>We meet people at libraries and fairs, not in lecture halls.</p></div>
+        <div class="card"><h3>Youth-led, expert-backed</h3><p>Students run LegalLead. Real legal professionals help us get it right.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width:700px;">
+      <h2>Milestones so far</h2>
+      <div class="timeline" style="margin-top:24px;">
+        <div class="tl-item"><h3>First workshop</h3><p>A single session at a local library on tenant rights basics.</p></div>
+        <div class="tl-item"><h3>First chapter outside our home state</h3><p>A student in Ohio reached out and started their own chapter.</p></div>
+        <div class="tl-item"><h3>National booklet series</h3><p>Free explainer booklets distributed to schools and libraries.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <h2>Meet a few of the team</h2>
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card"><h3>Founder & Executive Director</h3><p>Started LegalLead after a rough first apartment lease. Still answers most of the emails personally.</p></div>
+        <div class="card"><h3>Chapter Operations Lead</h3><p>Keeps every state head connected and supported.</p></div>
+      </div>
+      <div class="btn-row"><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScvB4hbWFZ_Be89R9WfD7ffWN-Ewy9SlammuMEq1lZzU3vsRg/viewform" target="_blank">Join the Mission</a></div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-chapters">
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Chapters</span>
+      <h1>Find your chapter — or start one</h1>
+      <p>LegalLead chapters are led by state heads and local student leaders. Each one runs its own workshops, booths, and outreach, shaped around what their community actually needs.</p>
+    </div>
+  </section>
+
+  <section class="section-alt3">
+    <div class="wrap">
+      <h2>Active chapters</h2>
+      <div class="grid grid-3" style="margin-top:22px;">
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>Austin, TX</h3><p>Weekly workshops with two local high schools. Led by a team of 6.</p></div>
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>Columbus, OH</h3><p>Runs the "Know Your Rights" library series each spring.</p></div>
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>San Jose, CA</h3><p>Hosts our biggest annual community booth.</p></div>
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>Atlanta, GA</h3><p>Focused on first-job and workplace-rights sessions.</p></div>
+        <div class="chapter-card"><div class="pin">&#128205;</div><h3>Chicago, IL</h3><p>Partners with three neighborhood libraries.</p></div>
+        <div class="chapter-card" style="opacity:.6;"><div class="pin">&#10024;</div><h3>Your city?</h3><p>No chapter here yet — could be a good sign it's time to start one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>How the chapter model works</h2>
+      <div class="grid grid-2" style="margin-top:20px;">
+        <div class="card"><h3>State heads</h3><p>Oversee chapters across their state, support new chapter leaders, and connect local teams to national resources.</p></div>
+        <div class="card"><h3>Chapter leaders</h3><p>Run events, recruit local volunteers, and adapt LegalLead's content to their community.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt4">
+    <div class="wrap" style="max-width:700px;">
+      <h2>Don't see a chapter near you?</h2>
+      <p>Starting a chapter doesn't require a legal background — just some organizing energy and a community you care about. We'll walk you through the rest.</p>
+      <div class="btn-row"><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScvB4hbWFZ_Be89R9WfD7ffWN-Ewy9SlammuMEq1lZzU3vsRg/viewform" target="_blank">Apply for Chapter Leadership</a></div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-events">
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Events</span>
+      <h1>Where to find us next</h1>
+      <p>Workshops, and community booths — hosted by chapters across the country, and open to anyone who wants to show up.</p>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <h2>Upcoming</h2>
+      <div class="grid grid-3" style="margin-top:22px;">
+        <div class="event-ticket"><span class="badge">Jul 12 &middot; Austin</span><h3>Renters 101 Workshop</h3><p>What every first-time renter should know before signing.</p><div class="btn-row"><button class="btn btn-secondary">RSVP</button></div></div>
+        <div class="event-ticket"><span class="badge">Jul 19 &middot; Virtual</span><h3>Volunteer Info Session</h3><p>Thinking about joining? Come ask us anything, live.</p><div class="btn-row"><button class="btn btn-secondary">RSVP</button></div></div>
+        <div class="event-ticket"><span class="badge">Aug 2 &middot; San Jose</span><h3>Community Booth</h3><p>Free booklets, stickers, and quick Q&amp;A with our team.</p><div class="btn-row"><button class="btn btn-secondary">RSVP</button></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Past events</h2>
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card"><span class="badge">Just happened</span><h3>Workplace Rights Night</h3><p>Atlanta chapter — 40 attendees, first-job basics.</p></div>
+        <div class="card"><h3>Library Legal Fair</h3><p>Columbus chapter — five local partner organizations tabled alongside us.</p></div>
+        <div class="card"><h3>Contracts 101 Pop-Up</h3><p>San Jose chapter — a walk-up booth at the community center, no appointment needed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt2">
+    <div class="wrap" style="max-width:700px;">
+      <h2>Want us at your event?</h2>
+      <p>Schools, libraries, and community groups can request a LegalLead workshop or booth. We'll work with you on the topic and format.</p>
+      <div class="btn-row"><button class="btn btn-dark" data-goto="partner">Request an Event</button></div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-resources">
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Resources</span>
+      <h1>Free, plain-language legal resources</h1>
+      <p>Booklets, infographics, and explainer PDFs — organized by topic, not by grade level. Start wherever makes sense for you.</p>
+    </div>
+  </section>
+
+  <section class="section-alt3">
+    <div class="wrap">
+      <h2>Start here</h2>
+      <div class="grid grid-3" style="margin-top:22px;">
+        <div class="resource-folder"><span class="badge">Booklet</span><h3>Renters Rights 101</h3><p>What to check before you sign a lease.</p><div class="btn-row"><button class="btn btn-secondary">Download</button></div></div>
+        <div class="resource-folder"><span class="badge">Infographic</span><h3>What to Do at a Traffic Stop</h3><p>A one-page, plain-language breakdown.</p><div class="btn-row"><button class="btn btn-secondary">Download</button></div></div>
+        <div class="resource-folder"><span class="badge">Infographic</span><h3>Know Your Rights Card</h3><p>A pocket-sized reference for ID stops and searches.</p><div class="btn-row"><button class="btn btn-secondary">Download</button></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Browse by topic</h2>
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card"><h3>Renters' Rights</h3><p>Leases, deposits, and what happens if something goes wrong.</p></div>
+        <div class="card"><h3>Workplace Basics</h3><p>First jobs, paychecks, and what your employer can and can't do.</p></div>
+        <div class="card"><h3>Know Your Rights</h3><p>ID stops, searches, and staying calm and informed.</p></div>
+        <div class="card"><h3>Contracts 101</h3><p>What you're actually agreeing to when you sign something.</p></div>
+        <div class="card"><h3>School & Student Rights</h3><p>What schools can and can't require of students.</p></div>
+        <div class="card"><h3>Digital & Privacy Basics</h3><p>Terms of service, data, and your rights online.</p></div>
+      </div>
+    </div>
+  </section>
+ 
+</div>
+
+<div class="page" id="page-apply">
+  <section class="section-alt4">
+    <div class="wrap">
+      <h2>Roles you could take on</h2>
+      <div class="grid grid-3" style="margin-top:22px;">
+        <div class="card role-card"><h3>Teaching</h3><p>Lead workshops and help write lesson content.</p></div>
+        <div class="card role-card"><h3>Design</h3><p>Create booklets, infographics, and visual resources.</p></div>
+        <div class="card role-card"><h3>Tech</h3><p>Help run the website and tools.</p></div>
+        <div class="card role-card"><h3>Business & Ops</h3><p>Partnerships, fundraising, and keeping chapters organized.</p></div>
+        <div class="card role-card"><h3>Social Media</h3><p>Tell LegalLead's story online and grow our reach.</p></div>
+        <div class="card role-card"><h3>Chapter Leadership</h3><p>Start or run a chapter in your own city.</p></div>
+      </div>
+      <div class="btn-row"><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScvB4hbWFZ_Be89R9WfD7ffWN-Ewy9SlammuMEq1lZzU3vsRg/viewform" target="_blank">Apply Now</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width:720px;">
+      <h2>Common questions</h2>
+      <div class="card" style="margin-top:16px;"><h3>Do I need experience?</h3><p>No. We'll train you. What matters more is that you care about the mission.</p></div>
+      <div class="card" style="margin-top:16px;"><h3>Is this only for law students?</h3><p>Not at all — most of our members aren't. LegalLead works because we explain things like regular people, not lawyers.</p></div>
+      <div class="card" style="margin-top:16px;"><h3>What if there's no chapter near me?</h3><p>You can start one, or join our national team remotely.</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-partner">
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Partner With Us</span>
+      <h1>Bring LegalLead to your community</h1>
+      <p>We partner with schools, libraries, youth organizations, and local nonprofits to bring legal literacy directly to the people who need it.</p>
+    </div>
+  </section>
+
+  <section class="section-alt2">
+    <div class="wrap">
+      <h2>What a partnership can look like</h2>
+      <div class="grid grid-3" style="margin-top:22px;">
+        <div class="card"><h3>Host a workshop</h3><p>We bring the content, you bring the space and the audience.</p></div>
+        <div class="card"><h3>Co-branded resources</h3><p>Booklets and infographics tailored to your community.</p></div>
+        <div class="card"><h3>Table at your event</h3><p>We show up with a booth, booklets, and stickers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Who we work with</h2>
+      <div class="grid grid-2" style="margin-top:20px;">
+        <div class="card"><h3>Schools & Libraries</h3><p>Bringing legal literacy directly into spaces students and families already trust.</p></div>
+        <div class="card"><h3>Youth Orgs & Nonprofits</h3><p>Partnering on programming that reaches the communities you already serve.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt3">
+    <div class="wrap" style="max-width:700px;">
+      <h2>Ready to team up?</h2>
+      <p>Tell us a bit about your organization and what you're hoping to do together — we'll follow up personally.</p>
+      <div class="btn-row"><button class="btn btn-primary" data-goto="contact">Get in Touch</button></div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-contact">
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Contact</span>
+      <h1>Say hello</h1>
+      <p>Question, media inquiry, partnership idea, or just want to say hi — we read every message.</p>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap grid grid-2">
+      <div>
+        <h2>Send a message</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('This form is a design preview. Connect it to a service like Formspree or Google Forms to make it live.');">
+          <label>Name<br><input type="text" placeholder="Your name" required></label>
+          <label>Email<br><input type="email" placeholder="you@email.com" required></label>
+          <label>Reason<br>
+            <select>
+              <option>General question</option>
+              <option>Media inquiry</option>
+              <option>Partnership</option>
+              <option>Chapter interest</option>
+            </select>
+          </label>
+          <label>Message<br><textarea placeholder="What's on your mind?"></textarea></label>
+          <button class="btn btn-primary" type="submit" style="align-self:flex-start;">Send a Message</button>
+        </form>
+      </div>
+      <div>
+        <div class="sticky-note wobble2" style="margin-bottom:20px;">psst — we usually reply within a few days!</div>
+        <h3>Follow along</h3>
+        <p>Instagram &middot; TikTok &middot; YouTube</p>
+        <h3>Press & media</h3>
+        <p>hello@legallead.org</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo" style="color:var(--cream);">&#9878;&#65039; LegalLead<span class="dot">.</span></div>
+      <p style="max-width:260px; opacity:.8; margin-top:10px;">Law, translated. A youth-led nonprofit for legal literacy and community empowerment.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Explore</h4>
+        <a data-goto="about">About</a>
+        <a data-goto="chapters">Chapters</a>
+        <a data-goto="events">Events</a>
+        <a data-goto="resources">Resources</a>
+      </div>
+      <div>
+        <h4>Get involved</h4>
+        <a data-goto="apply">Apply</a>
+        <a data-goto="partner">Partner With Us</a>
+        <a data-goto="contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">&copy; LegalLead. Made with care by a youth-led team.</div>
+</footer>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+  var target = document.getElementById('page-' + id);
+  if(target){ target.classList.add('active'); }
+  document.querySelectorAll('nav.tabs button').forEach(function(b){
+    b.classList.toggle('active', b.getAttribute('data-goto') === id);
+  });
+  window.scrollTo({top:0, behavior:'instant'});
+  if(location.hash !== '#' + id){ history.pushState(null,'','#' + id); }
+}
+
+document.addEventListener('click', function(e){
+  var el = e.target.closest('[data-goto]');
+  if(el){ showPage(el.getAttribute('data-goto')); }
+});
+
+window.addEventListener('popstate', function(){
+  var id = location.hash.replace('#','') || 'home';
+  showPage(id);
+});
+
+var startId = location.hash.replace('#','') || 'home';
+showPage(startId);
+</script>
+
 </body>
 </html>
